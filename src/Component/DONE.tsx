@@ -1,12 +1,12 @@
 import { Key } from "react";
-import TasksButtonDoing from "./TasksButtonDoing";
+import TasksButtonDone from "./TasksButtonDone";
 
-const DOING = (props: { tasks: any[]; toggleTask: any; deleteTask: any; }) => {
+const DONE = (props: { tasks: any[]; toggleTask: any; deleteTask: any; }) => {
 
   return (
     <>
       {props.tasks.map((t: { id: Key | undefined; }, index) => (
-        <TasksButtonDoing
+        <TasksButtonDone
               task={t}
               key={t.id}
               toggleTask={props.toggleTask}
@@ -17,4 +17,4 @@ const DOING = (props: { tasks: any[]; toggleTask: any; deleteTask: any; }) => {
   );
 };
 
-export default DOING;
+export default DONE;

@@ -1,16 +1,17 @@
 import { Key } from "react";
-import TasksButtonDoing from "./TasksButtonDoing";
+import TasksButtonToDo from "./TasksButtonToDo";
 
 const TODO = (props: { tasks: any[]; toggleTask: any; deleteTask: any; }) => {
 
   return (
     <>
-      {props.tasks.map((t: { id: Key | undefined; }) => (
-        <TasksButtonDoing
+      {props.tasks.map((t, index) => (
+        <TasksButtonToDo
               task={t}
               key={t.id}
               toggleTask={props.toggleTask}
-              deleteTask={props.deleteTask} addTasks={undefined}        />
+              deleteTask={() => props.deleteTask(index)} addTasks={undefined}        
+        />
       ))}
       
     </>
