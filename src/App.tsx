@@ -5,6 +5,7 @@ import TODO from './Component/TODO';
 import DOING from './Component/DOING';
 import DONE from './Component/DONE';
 import TasksHeader from './Component/TasksHeader';
+import NavTitle from './Component/NavTitle';
 
 function App() {
 //TODO Tasks
@@ -67,6 +68,7 @@ const [tasks, setTasks] = useState([
 //Fin done Tasks
   return (
 <div className='container'>
+  <NavTitle/>
       {/* Input */}   
     <TaskAjout addTask={addTask} />
     <TasksHeader tasks={tasks} doing={doing} done={done}/>
@@ -87,7 +89,7 @@ const [tasks, setTasks] = useState([
       <DOING tasks={doing} toggleTask={toggleTask} deleteTask={addToDone}/>
       </ul>
     </div>
-    
+
     {/* DONE CARD*/}
     <div className="done" style={{width: "18rem"}}>  
         <div className="Done-header">DONE</div>
