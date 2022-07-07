@@ -7,12 +7,11 @@ const DOING = (props: { tasks: any[]; toggleTask: any; deleteTask: any; }) => {
     <>
       {props.tasks.map((t: { id: Key | undefined; }, index) => (
         <TasksButtonDoing
-              task={t}
-              key={t.id}
-              toggleTask={props.toggleTask}
-              deleteTask={() => props.deleteTask(index)} addTasks={undefined}        />
+          task={t}
+          key={t.id}
+          toggleTask={props.toggleTask}
+          deleteTask={() => props.deleteTask(index)} addTasks={undefined} deleteTask3={undefined}        />
       ))}
-      
     </>
   );
 };

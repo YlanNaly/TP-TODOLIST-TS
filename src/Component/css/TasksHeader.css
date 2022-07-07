@@ -1,0 +1,18 @@
+/* .title{
+    color: rgb(119, 201, 255);
+    margin-top: 2%;
+}
+.title2{
+    color: rgb(255, 244, 86);
+    margin-left: 40%;
+} */
+.title{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 2%;
+    gap: 27%;
+}
+.tache{
+    color: rgb(255, 255, 255);
+}

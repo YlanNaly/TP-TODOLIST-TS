@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap');
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: black;
 }
 .App{
   display: flex;
@@ -16,6 +17,7 @@ body{
   max-height: 500px;
   overflow: auto;
   position: fixed;
+  box-shadow: 12px 12px 12px black, 12px 12px 12px rgb(110, 110, 255);
 }
 .Todo-header{
   font-size: x-large;
@@ -29,6 +31,7 @@ body{
   overflow: auto;
   text-align: center;
   position: fixed;
+  box-shadow: 12px 12px 12px black, 12px 12px 12px rgb(255, 255, 117);
 }
 .Doing-header{
   font-size: x-large;
@@ -42,8 +45,13 @@ body{
   overflow: auto;
   text-align: center;
   position: fixed;
+  box-shadow: 12px 12px 12px black, 12px 12px 12px rgb(165, 255, 81);
 }
 .Done-header{
   font-size: x-large;
   background-color: rgb(165, 255, 81);
+}
+.list-group-item{
+  border : 1px solid rgb(255, 255, 255);
+  margin-top : 2%
 }

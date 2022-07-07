@@ -6,10 +6,10 @@ const TasksButtonDone = (props :any) => {
   
     return (
       <div>
-        <label>
+        <li className="list-group-item">
           <input
             type="checkbox"
-            checked={task.done}
+            checked={true}
             onChange={() => toggleTask(task.id)}
           />
           {task.text}
@@ -22,7 +22,7 @@ const TasksButtonDone = (props :any) => {
           >
             &times;
           </span>
-        </label>
+        </li>
       </div>
       
     );
